@@ -2,7 +2,6 @@
 <suite name="Regression TestSuite">
 	<test name="Application Test">
 		<classes>
-			<class name="com.expedia.flightbooking.TestNG_Screenshots"></class>
 			<class name="com.expedia.extentReports.LoginTest"></class>
 		</classes>
 	</test>
