@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression TestSuite">
+	<test name="GroupsDemo">
+		<groups>
+			<define name="all">
+				<include name="suv"></include>
+				<include name="bike"></include>
+				<include name="sedan"></include>
+			</define>
+			<define name="nobike">
+				<include name="suv"></include>
+				<include name="sedan"></include>
+			</define>
+			<run>
+				<include name="nobike"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.expedia.flightbooking.TestNG_Screenshots"></class>
+		</classes>
+	</test>
+</suite>
